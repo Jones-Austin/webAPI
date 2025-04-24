@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+
+app.disable('x-powered-by');
+
+
 const port = 8004;
 const carroutes = require('./src/brands/routers.js'); // Import the car routes
 
